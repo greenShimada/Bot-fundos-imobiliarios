@@ -15,6 +15,9 @@ class FundosSpider(scrapy.Spider):
 
 
     def parse_each(self, response):
-        response.xpath('//div[@class="value"]').getall()
+        cot_dy_val =  response.xpath('//div[@class="_card-body"]/div/span/text()').getall()
+        pvp_liq =  response.xpath('//div[@class="_card-body"]/span/text()').getall()
+        tipo_de_fundo = response.xpath('//div[@class="cell"]/div[@class="desc"]/span[text()="\nTIPO DE FUNDO\n"]/following::div/span/text()').get()
+
         pass
 
