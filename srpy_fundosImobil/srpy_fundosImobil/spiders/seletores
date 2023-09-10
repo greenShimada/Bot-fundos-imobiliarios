@@ -1,0 +1,5 @@
+Na pagina www.investidor10.com.br
+
+P/VP -> .indicators div:nth-child(1).name + span
+DY   -> .indicators div + div.name+ span
+
